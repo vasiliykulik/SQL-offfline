@@ -7,6 +7,7 @@ CREATE TABLE Component (
   id    INT PRIMARY KEY NOT NULL,
   name  VARCHAR(20),
   price REAL
+
 );
 
 CREATE TABLE pizza (
