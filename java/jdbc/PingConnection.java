@@ -1,6 +1,6 @@
-package java.jdbc;
+package jdbc;
 
-import java.jdbc.entity.Component;
+import jdbc.entity.Component;
 
 import java.sql.*;
 
