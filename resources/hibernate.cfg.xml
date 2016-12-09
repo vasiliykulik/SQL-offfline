@@ -6,9 +6,9 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/offline</property>
-        <!--<property name="hibernate.connection.username"></property>-->
-        <!--<property name="hibernate.connection.password"></property>-->
-        <!-- c3p0 - встроенный hibernate pool-->
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">abc</property>
+        <!-- c3p0 - встроенный в hibernateoffline pool-->
          <property name="hibernate.c3p0.min_size">5</property>
          <property name="hibernate.c3p0.max_size">20</property>
          <property name="hibernate.c3p0.timeout">1800</property>

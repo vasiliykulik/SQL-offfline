@@ -1,6 +1,6 @@
-package java.jdbc.dao;
+package jdbc.dao;
 
-import java.jdbc.entity.Component;
+import jdbc.entity.Component;
 
 import java.math.BigDecimal;
 import java.sql.SQLException;

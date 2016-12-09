@@ -1,4 +1,4 @@
-package java.jdbc.entity;
+package jdbc.entity;
 
 /**
  * Created by Стрела on 02.12.2016.
