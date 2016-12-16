@@ -16,7 +16,7 @@ public class HibernateTestConnection {
     public static void main(String[] args) {
         /*SessionFactory как делалось раньше
         * Configuration может передаваться через .xml, .properties, bean (Spring), b руками: */
-        /*Configuration configuration = new Configuration().addAnnotatedClass(Component.class)*/ - /*через аннотацию*/
+        /*Configuration configuration = new Configuration().addAnnotatedClass(Component.class)*/  /*через аннотацию*/
         Configuration configuration = new Configuration().addAnnotatedClass(Component.class)
                 /*есть методы addFile, setProperty (
                 много 1 часть пропертей относится к Connection(user, dialect), настройки кешей, и настройки
@@ -25,7 +25,7 @@ public class HibernateTestConnection {
         try (SessionFactory sessionFactory = configuration.buildSessionFactory()) {
         try (Session session = sessionFactory.openSession()) {
             session.createNativeQuery("select 1 from public.component").list();
-            System.out.println(Component.class,);
+            System.out.println(Component.class);
         }}
 
         // f можно делать через Service

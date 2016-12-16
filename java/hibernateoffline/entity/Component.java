@@ -1,14 +1,17 @@
 package hibernateoffline.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 /**
  * Created by Стрела on 02.12.2016.
  */
 @Entity
-@Table(name = "component")
+@Table(name = "component",schema = "public")
 public class Component {
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
     private int id;
     private String name;
     private double price;
